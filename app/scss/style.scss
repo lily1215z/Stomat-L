@@ -1,0 +1,460 @@
+@import "vars";
+@import "libs";
+@import "global";
+@import "fonts";
+
+
+// start header
+
+.header {
+    background-color: #b2d5f0;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: cover;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 270px;
+        margin: 0 80px 0;
+    }
+    &__logo {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        position: relative;
+        top: 60px;
+    }
+    &__text {
+        font-size: 30px;
+        margin-right: 250px;
+        margin-bottom: 15px;
+        font-weight: 700;
+        color: $blue;
+    }
+    &__info {
+        position: relative;
+    }
+    &__tel {
+        display: block;
+        text-align: right;
+        margin-bottom: 5px;
+        color: $blue;
+        font-size: 25px;
+        span {
+            margin-left: 20px;
+            color: $blue;
+            font-family: 'Merriweather', serif !important;
+        }
+    }
+    &__name,
+    &__adress {
+        text-align: right;
+        margin-bottom: 5px;
+        color: $black;
+        font-size: 20px;
+    }
+    &__life {
+        margin-right: 7px;
+    }
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin-right: 50px;
+    }
+    &__list-down {
+        display: flex;
+        justify-content: space-around;
+        height: 70px;
+        align-items: center;
+    }
+    &__item + .header__item {
+        margin-left: 50px;
+    }
+    &__link {
+        font-size: 25px;
+        color: $blue;
+        font-weight: 900;
+        transition: all .3s;
+        padding: 7px 12px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        &:hover {
+            color: #3c42d8;
+            background-color: $bg;
+            box-shadow: 1px 3px 16px -2px rgba(17,51,186,0.87);
+        }
+    }
+    &__down {
+        margin-top: 35px;
+    }
+ }
+ 
+ .social {
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ .icons {
+    font-size: 25px;
+    font-family: 'icomoon';
+    color: $blue;
+    cursor: pointer;
+ }
+ 
+ .icons + .icons {
+    margin-left: 20px;
+ }
+ .icon-mobile-phone {
+    color: $black;
+ }
+ // end header
+ 
+// start about
+
+.about {
+   padding: 70px 0 100px 0;
+   background-image: url(../images/circle.png);
+   background-repeat: no-repeat;
+   background-position: bottom right;
+   &__block {
+       display: flex;
+       justify-content: space-between;
+   }
+   &__text {
+       text-align: justify;
+       font-size: 18px;
+       line-height: 30px;
+       padding: 20px;
+       max-width: 800px;
+       margin: 0 15px 0 0;
+       border-radius: 5px;
+       box-shadow: 1px 3px 16px -2px rgba(17,51,186,0.87);
+       background-color: $bg;
+   }
+   &__img {
+       border-radius: 5px;
+   }
+}
+.title {
+    text-align: center;
+    color: $black;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+    font-size: 40px;
+    line-height: 70px;
+}
+
+.anim {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: anim;
+    transition: .9s;
+}
+@keyframes anim {
+    from {
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+// end about
+// start work slider
+
+.title.title--position {
+    text-align: left;
+    margin-left: 300px;
+    margin-bottom: 100px;
+    line-height: 40px;
+    display: inline-block;
+    border-bottom: 4px solid $sky;
+}
+.work {
+    padding: 20px 0 100px;
+    position: relative;
+}
+.work__img img{
+    box-shadow: 1px 3px 16px -2px rgba(17,51,186,0.87);
+}
+.work__item-inner {
+    text-align: center;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 100px;
+    height: 10px;
+    border: none;
+    box-shadow: 1px 3px 16px -2px rgba(17,51,186,0.87);
+}
+.slick-dots li {
+    margin-left: 20px;
+}
+.slick-dots li:first-child {
+    margin-left: 0;
+}
+.slick-dots {
+    display: flex;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.slick-dots .slick-active {
+    border-bottom: 1px solid rgba(17,51,186,0.3);
+}
+
+// end work slider
+// start contact
+.contact {
+    padding: 50px 0 100px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        width: 350px;
+        line-height: 24px;
+        font-size: 16px !important;
+        padding: 20px 10px 0 20px;
+        border-radius: 5px;
+        box-shadow: 1px 3px 16px -2px rgba(17,51,186,0.87);
+        background-color: $bg;
+    }
+    &__subtitle {
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+    &__adress {
+        margin-bottom: 20px;
+        position: relative;
+        span {
+            color: $black;
+            margin-left: 20px;
+            display: block;
+            line-height: 24px;
+            font-family: 'Merriweather', serif !important;
+        }
+    }
+    &__tel {
+        margin-bottom: 20px;
+    }
+    &__link {
+        span {
+            margin-left: 15px;
+            font-size: 16px !important;
+            font-family: 'Merriweather', serif !important;
+        }
+    }
+    &__map {
+        iframe {
+            width: 870px;
+            height: 610px;
+        }
+    }
+    &__arrived {
+        margin-left: 20px;
+    }
+    &__car {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.title.title--contact {
+    text-align: left;
+    margin-left: 65px;
+    margin-bottom: 50px;
+    line-height: 40px;
+    display: inline-block;
+    border-bottom: 4px solid $sky;
+}
+.contact__block .icon-map-marker::before {
+    content: "\f041";
+    position: absolute;
+    top: 12px;
+    font-size: 20px;
+}
+.contact__link.icon-mobile-phone {
+    font-size: 20px;
+}
+.contact__email-link {
+    margin-left: 5px;
+    color: $black;
+    margin-bottom: 40px;
+}
+// end contact
+// start page hobby
+
+.hobby {
+    padding: 80px 0 120px;
+    background-image: url(../images/circle.png);
+    background-repeat: no-repeat;
+    background-position: 0 1000px;
+    position: relative;
+    &::before {
+        content: url(../images/circle.png);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: -1;
+    }
+    &::after {
+        content: url(../images/circle.png);
+        position: absolute;
+        bottom: 1000px;
+        left: 0;
+        z-index: -1;
+    }
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__img {
+        margin-left: 10px;
+        border-radius: 10px;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+    &__title {
+        margin-bottom: 70px;
+    }
+}
+
+
+// end page hobby
+// start price page
+
+.price {
+    padding: 50px 0;
+    &::after {
+        content: url(../images/circle.png);
+        position: absolute;
+        top: 500px;
+        left: 20px;
+        z-index: -1;
+    }
+    &__inner {
+        background-color: $bg;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 1px 3px 16px -2px rgba(17,51,186,0.87);
+    }
+    &__box li {
+        display: flex;
+        justify-content: space-between;
+        color: $black;
+    }
+    &__money {
+        margin-right: 20px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 30px;
+        margin-left: 180px;
+        font-style: italic;
+    }
+    &__item {
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+    &__specification {
+        font-size: 20px;
+        font-weight: 900;
+        margin: 25px 0 25px 50px;
+    }
+    &__subject {
+        font-weight: 700;
+        margin: 10px 0 10px 25px;
+    }
+    &__unit {
+        margin: 20px 0 20px 25px;
+        line-height: 24px;
+    }
+}
+
+// end price page
+// start footer
+
+.footer {
+    background-image: url(../images/01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0 50px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__phrase {
+        color: $blue;
+        font-weight: 700;
+        line-height: 28px;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    &__author {
+        margin-bottom: 30px;
+        font-size: 18px;
+        text-align: right;
+        color: $black;
+    }
+    &__logo {
+        border-radius: 50%;
+        box-shadow: 1px 3px 16px -2px rgba(17,51,186,0.87);
+    }
+    &__title {
+        margin-bottom: 30px;
+        margin-top: 45px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &__logo-name {
+        color: $black;
+        font-weight: 900;
+    }
+    &__img {
+        position: absolute;
+        top: 125px;
+        right: 7px;
+    }
+    &__social {
+        position: relative;
+    }
+}
+
+
+.social__link {
+    display: inline-block;
+}
+.footer__author--size {
+    margin-right: 75px;
+}
+.footer__author--gap {
+    margin-right: 95px;
+}
+.footer-down {
+    background-color: $black;
+    padding: 15px 0;
+}
+.footer-down__title {
+    color: #fff;
+    text-align: center;
+}
+
+// end footer
+
+
+
+
+
+@import "media";

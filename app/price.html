@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Улыбнись</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            @@include('components/_header.html')
+            <!-- Эта строка нужна, чтоб работали свойства для класса hobby -->
+            
+            <div class="price">
+                <div class="container">
+                    <h2 class="price__title title anim">
+                        Прейскурант цен
+                    </h2>
+                    <div class="price__inner">
+                        <ul class="price__box">
+                            <li class="price__name">Наименование услуги<span>Стоимость</span></li>
+                            <li class="price__item">Консультация<span class="price__money">100грн</span></li>
+                            <li class="price__item">Компьютерный дентальный снимок<span class="price__money">50грн</span></li>
+                            <li class="price__specification">Гигиена полости рта</li>
+                            <li class="price__item">Аппаратная чистка (скалер+эйр-фло) 1 челюсть<span class="price__money">500грн</span></li>
+                            <li class="price__item">Аппаратная чистка (скалер+эйр-фло) 2 челюсти<span class="price__money">80грн</span></li>
+                            <li class="price__item">Аппаратная чистка (эйр-фло) 2 челюсти<span class="price__money">от 600 грн</span></li>
+                            <li class="price__item">Наложение лечебной повязки<span class="price__money">100грн</span></li>
+                            <li class="price__item">Медикаментозная обработка зубодесневых карманов<span class="price__money">100грн</span></li>
+                            <li class="price__item">Медикаментозная обработка слизистой<span class="price__money">100грн</span></li>
+                            <li class="price__item">Отбеливание с помощью капп (домашнее отбеливание)<span class="price__money">от 2500 грн</span></li>
+                            <li class="price__item">Герметизация 1 зуба<span class="price__money">200грн</span></li>
+                            <li class="price__specification">Терапия</li>
+                            <li class="price__item">Анестезия инъекционная<span class="price__money">100грн</span></li>
+                            <li class="price__item">Анестезия аппликационная<span class="price__money">50грн</span></li>
+                            <li class="price__item">Оказание помощи при острой боли<span class="price__money">200 - 350 грн</span></li>
+                            <li class="price__item">Временная пломба<span class="price__money">50грн</span></li>
+                            <li class="price__item">Изоляция рабочего поля (коффердам)<span class="price__money">100грн</span></li>
+                            <li class="price__subject">Фотополимерная пломба:</li>
+                            <li class="price__item">Разрушение коронки зуба до 1/4 поверхности<span class="price__money">400грн</span></li>
+                            <li class="price__item">Разрушение коронки зуба до 1/3 поверхности (1 поверхность)<span class="price__money">500грн</span></li>
+                            <li class="price__item">Разрушение коронки зуба до 1/2 поверхности (2 поверхности)<span class="price__money">600грн</span></li>
+                            <li class="price__item">Разрушение коронки зуба до 2/3 поверхности (3 поверхности)<span class="price__money">700грн</span></li>
+                            <li class="price__item">Фотореставрация<span class="price__money">800грн</span></li>
+                            <li class="price__subject">Лечение корневых каналов:</li>
+                            <li class="price__unit">Разработка с применением "SOCO" и пломбирование (эндодонтическая паста + гуттаперчевые штифты), холодным методом</li>
+                            <li class="price__item">1-канального зуба<span class="price__money">400грн</span></li>
+                            <li class="price__item">2-канального зуба<span class="price__money">600грн</span></li>
+                            <li class="price__item">3-канального зуба<span class="price__money">900грн</span></li>
+                            <li class="price__item">4-канального зуба<span class="price__money">1200грн</span></li>
+                            <li class="price__item">Распломбирование корневого канала<span class="price__money">250грн</span></li>
+                            <li class="price__item">Временное пломбирование корневого канала<span class="price__money">100грн</span></li>
+                            <li class="price__item">Извлечение металлической вкладки<span class="price__money">500грн</span></li>
+                            <li class="price__specification">Ортопедия</li>
+                            <li class="price__subject">Несъемное протезирование</li>
+                            <li class="price__item">Металлическая вкладка<span class="price__money">800грн</span></li>
+                            <li class="price__item">Керамическая вкладка<span class="price__money">2800грн</span></li>
+                            <li class="price__unit">Коронки 1 ед.</li>
+                            <li class="price__item">Временная<span class="price__money">200грн</span></li>
+                            <li class="price__item">Пластмассовая<span class="price__money">500грн</span></li>
+                            <li class="price__item">Металлическая цельнолитая<span class="price__money">1600грн</span></li>
+                            <li class="price__item">Металлокерамическая<span class="price__money">3000грн</span></li>
+                            <li class="price__item">Металлокерамическая на имплантанте<span class="price__money">4000грн</span></li>
+                            <li class="price__item">Безметалловая коронка<span class="price__money">6000грн</span></li>
+                            <li class="price__subject">Съемное протезирование</li>
+                            <li class="price__item">Акриловый протез на 1 челюсть<span class="price__money">4000грн</span></li>
+                            <li class="price__item">Акриловый протез на 1 челюсть (импортный гарнитур)<span class="price__money">5500грн</span></li>
+                            <li class="price__item">Безакриловый протез на 1 челюсть<span class="price__money">6000грн</span></li>
+                            <li class="price__item">Бюгельный протез (металлический карказ) на 1 челюсть<span class="price__money">10500грн</span></li>
+                            <li class="price__item">Замковое крепление (аттачмен)<span class="price__money">2000грн</span></li>
+                            <li class="price__item">Акриловый иммедиат-протез (частичный на 1-3 зуба) <span class="price__money">1000грн</span></li>
+                            <li class="price__item">Безакриловый иммедиат-протез (частичный на 1-3 зуба)<span class="price__money">1500грн</span></li>
+                            <li class="price__item">Починка акрилового протеза, приварка кламмера<span class="price__money">300грн</span></li>
+                            <li class="price__item">Перебазировка протеза<span class="price__money">300грн</span></li>
+                            <li class="price__item">Замена втулки для аттачмена<span class="price__money">200грн</span></li>
+                            <li class="price__item">Фиксация коронки<span class="price__money">200грн</span></li>
+                            <li class="price__item">Снятие коронки<span class="price__money">200грн</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    @@include('components/_footer.html')
+    </div>
+
+
+
+
+    @@include('components/_scripts.html')
+</body>
+
+</html>
